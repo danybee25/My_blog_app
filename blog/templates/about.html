@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+
+    </div>
+    <div class="w3-padding-64">
+      <a href="{{ url_for('home') }}" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="{{ url_for('account') }}" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Account</a>
+
+
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>About</h1>
+      <img src="https://worldinsidepictures.com/wp-content/uploads/2013/07/do-11.jpg" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>This is a blog that allow users to share ideas and also post relevant information about what they love. </p>
+        <p>This can be posts on new technologies, societal issues or any positive thing you think can of help to some one.</p>
+        <p>Let's Begin!!!😊😊😊😊</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+<p>Developed by Daniel Boateng</p>
+</footer>
+
+</body>
+{% endblock content %}
